@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fountain of Grace - Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+* {margin:0; padding:0; box-sizing:border-box; font-family:'Roboto', sans-serif;}
+body {background:#f0fdf4; color:#333; line-height:1.6;}
+header {background:#2e7d32; color:white; padding:25px 0; text-align:center;}
+header h1 {font-size:3rem;}
+header p {font-size:1.2rem; margin-top:5px;}
+nav {background:#1b5e20;}
+nav ul {display:flex; justify-content:center; list-style:none; flex-wrap:wrap;}
+nav ul li {margin:0 15px;}
+nav ul li a {color:white; text-decoration:none; padding:15px 0; display:block; transition:0.3s;}
+nav ul li a:hover {color:#a5d6a7;}
+main {max-width:1100px; margin:40px auto; padding:0 20px;}
+section {margin-bottom:60px;}
+section h2 {color:#2e7d32; margin-bottom:20px; font-size:2.5rem;}
+footer {background:#1b5e20; color:white; text-align:center; padding:20px 0; margin-top:40px;}
+article {background:white; padding:20px; margin-bottom:30px; border-radius:10px; box-shadow:0 4px 6px rgba(0,0,0,0.1);}
+aside {background:#e8f5e9; padding:15px; border-left:5px solid #2e7d32; margin-bottom:30px;}
+figure {text-align:center; margin:20px 0;}
+figure img {max-width:100%; border-radius:10px; box-shadow:0 4px 6px rgba(0,0,0,0.1);}
+@media(max-width:768px){nav ul{flex-direction:column;}nav ul li{margin:10px 0;}}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Fountain of Grace</h1>
+    <p>Pouring out love, faith, and service</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="guide.html">Guide</a></li>
+    </ul>
+</nav>
+
+
+<main>
+<article>
+<h2>Bible Verse of the Day</h2>
+<p id="verse"></p>
+</article>
+
+<script>
+const verses = [
+  "Psalm 119:105 – Your word is a lamp to my feet and a light to my path.",
+  "Philippians 4:13 – I can do all things through Christ who strengthens me.",
+  "Isaiah 41:10 – Do not fear, for I am with you.",
+  "Proverbs 3:5 – Trust in the Lord with all your heart.",
+  "Matthew 11:28 – Come to Me, all who are weary."
+];
+document.getElementById("verse").innerText =
+  verses[new Date().getDate() % verses.length];
+</script>
+
+<section id="welcome">
+<article>
+<h2>Welcome</h2>
+<p>Welcome to Fountain of Grace, a place to grow in faith, experience God’s love, and live as a fountain of service to others.</p>
+</article>
+
+<aside>
+<p>Tip: Spend a few minutes each day in prayer or reflection to strengthen your relationship with God.</p>
+</aside>
+
+<figure>
+<img src="splash.jpg" alt="Flowing Fountain">
+<figcaption>A fountain flows endlessly, just like God’s love.</figcaption>
+</figure>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2026 Fountain of Grace. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
+

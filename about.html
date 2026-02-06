@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fountain of Grace - About Us</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+.expand-btn {
+    background:#4CAF50;
+    color:white;
+    padding:10px 15px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    margin-top:10px;
+    width:100%;
+    text-align:left;
+    font-size:1rem;
+    transition:0.3s;
+}
+.expand-btn:hover {background:#2e7d32;}
+
+.expand-content {
+    display:none;
+    background:#e8f5e9;
+    padding:15px;
+    border-left:5px solid #2e7d32;
+    margin-top:5px;
+    border-radius:5px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Roboto',sans-serif;}
+body{background:#f0fdf4;color:#333;line-height:1.6;}
+header{background:#2e7d32;color:white;padding:25px 0;text-align:center;}
+header h1{font-size:3rem;}
+header p{font-size:1.2rem;margin-top:5px;}
+nav{background:#1b5e20;}
+nav ul{display:flex;justify-content:center;list-style:none;flex-wrap:wrap;}
+nav ul li{margin:0 15px;}
+nav ul li a{color:white;text-decoration:none;padding:15px 0;display:block;transition:0.3s;}
+nav ul li a:hover{color:#a5d6a7;}
+main{max-width:1100px;margin:40px auto;padding:0 20px;}
+section{margin-bottom:60px;}
+section h2{color:#2e7d32;margin-bottom:20px;font-size:2.5rem;}
+article{background:white;padding:20px;margin-bottom:30px;border-radius:10px;box-shadow:0 4px 6px rgba(0,0,0,0.1);}
+aside{background:#e8f5e9;padding:15px;border-left:5px solid #2e7d32;margin-bottom:30px;}
+figure{text-align:center;margin:20px 0;}
+figure img{max-width:100%;border-radius:10px;box-shadow:0 4px 6px rgba(0,0,0,0.1);}
+footer{background:#1b5e20;color:white;text-align:center;padding:20px 0;margin-top:40px;}
+@media(max-width:768px){nav ul{flex-direction:column;}nav ul li{margin:10px 0;}}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Fountain of Grace</h1>
+<p>Helping people come closer to God</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="lessons.html">Lessons</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="guide.html">Guide</a></li>
+  </ul>
+</nav>
+
+
+<main>
+<section id="about-us">
+<article>
+<h2>About Us</h2>
+<p>
+At Fountain of Grace, our mission is to help people grow in faith, understand Jesus’ teachings,
+and live as fountains of love, service, and truth.
+</p>
+
+<h3>What We Believe (Click to Expand)</h3>
+
+<button class="expand-btn">1. God’s love is for everyone</button>
+<div class="expand-content">
+<p><strong>John 3:16</strong> – “For God so loved the world that He gave His one and only Son…”</p>
+</div>
+
+<button class="expand-btn">2. Jesus Christ is our Savior</button>
+<div class="expand-content">
+<p><strong>John 14:6</strong> – “I am the way and the truth and the life.”</p>
+</div>
+
+<button class="expand-btn">3. Faith grows through prayer and the Word</button>
+<div class="expand-content">
+<p><strong>Romans 10:17</strong> – “Faith comes from hearing the message…”</p>
+</div>
+
+<button class="expand-btn">4. Serving others is essential</button>
+<div class="expand-content">
+<p><strong>Mark 10:45</strong> – “The Son of Man did not come to be served, but to serve.”</p>
+</div>
+
+<button class="expand-btn">5. Forgiveness brings freedom</button>
+<div class="expand-content">
+<p><strong>Ephesians 4:32</strong> – “Forgive one another, just as God forgave you.”</p>
+</div>
+
+<button class="expand-btn">6. True joy comes from God</button>
+<div class="expand-content">
+<p><strong>Psalm 16:11</strong> – “In Your presence there is fullness of joy.”</p>
+</div>
+
+<button class="expand-btn">7. Everyone has purpose</button>
+<div class="expand-content">
+<p><strong>Jeremiah 29:11</strong> – “For I know the plans I have for you…”</p>
+</div>
+
+<button class="expand-btn">8. Growth requires surrender</button>
+<div class="expand-content">
+<p><strong>Luke 9:23</strong> – “Whoever wants to be My disciple must deny themselves…”</p>
+</div>
+
+<button class="expand-btn">9. Community strengthens faith</button>
+<div class="expand-content">
+<p><strong>Hebrews 10:24–25</strong> – “Encourage one another…”</p>
+</div>
+
+<button class="expand-btn">10. God’s grace is greater than failure</button>
+<div class="expand-content">
+<p><strong>2 Corinthians 12:9</strong> – “My grace is sufficient for you.”</p>
+</div>
+
+</article>
+
+<aside>
+<p>
+Tip: Read one belief each day and reflect on the verse in prayer.
+</p>
+</aside>
+
+<figure>
+<img src="https://images.unsplash.com/photo-1505232070786-3f1d7b3d1f1f" alt="Helping hands">
+<figcaption>We grow by serving others and drawing closer to God.</figcaption>
+</figure>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2026 Fountain of Grace. All Rights Reserved.</p>
+</footer>
+
+<script>
+const buttons = document.querySelectorAll('.expand-btn');
+buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+</script>
+
+</body>
+</html>

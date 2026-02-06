@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fountain of Grace - Resources</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+.expand-btn {
+    background:#4CAF50;
+    color:white;
+    padding:10px 15px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    margin-top:10px;
+    transition: background 0.3s;
+}
+
+.expand-btn:hover {
+    background:#2e7d32;
+}
+
+.expand-content {
+    display:none;
+    background:#e8f5e9;
+    padding:15px;
+    border-left:5px solid #2e7d32;
+    margin-top:10px;
+    border-radius:5px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Roboto',sans-serif;}
+body{background:#f0fdf4;color:#333;line-height:1.6;}
+header{background:#2e7d32;color:white;padding:25px 0;text-align:center;}
+header h1{font-size:3rem;}
+header p{font-size:1.2rem;margin-top:5px;}
+nav{background:#1b5e20;}
+nav ul{display:flex;justify-content:center;list-style:none;flex-wrap:wrap;}
+nav ul li{margin:0 15px;}
+nav ul li a{color:white;text-decoration:none;padding:15px 0;display:block;transition:0.3s;}
+nav ul li a:hover{color:#a5d6a7;}
+main{max-width:1100px;margin:40px auto;padding:0 20px;}
+section{margin-bottom:60px;}
+section h2{color:#2e7d32;margin-bottom:20px;font-size:2.5rem;}
+article{background:white;padding:20px;margin-bottom:30px;border-radius:10px;box-shadow:0 4px 6px rgba(0,0,0,0.1);}
+aside{background:#e8f5e9;padding:15px;border-left:5px solid #2e7d32;margin-bottom:30px;}
+footer{background:#1b5e20;color:white;text-align:center;padding:20px 0;margin-top:40px;}
+figure{text-align:center;margin:20px 0;}
+figure img{max-width:100%;border-radius:10px;box-shadow:0 4px 6px rgba(0,0,0,0.1);}
+@media(max-width:768px){nav ul{flex-direction:column;}nav ul li{margin:10px 0;}}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Fountain of Grace</h1>
+<p>Resources & Inspiration</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="lessons.html">Lessons</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="guide.html">Guide</a></li>
+  </ul>
+</nav>
+
+
+
+<main>
+<section id="resources">
+<article>
+<h2>Bible Verses</h2>
+<p>Here are some inspirational verses to guide your faith:</p>
+<ul>
+<li>John 3:16 – God’s love for the world</li>
+<li>Luke 14:26–27 – The cost of following Jesus</li>
+<li>Matthew 5:16 – Shine your light before others</li>
+<li>Philippians 4:13 – Strength through Christ</li>
+</ul>
+
+<!-- Clickable expandable section -->
+<button class="expand-btn">Click for more info on John 3:16</button>
+<div class="expand-content">
+    <p>John 3:16 reminds us that God’s love is unconditional. Whoever believes in Him will have eternal life. This verse encourages us to trust Jesus and share His love with others.</p>
+</div>
+
+<button class="expand-btn">Click for more info on Luke 14:26–27</button>
+<div class="expand-content">
+    <p>Luke 14:26–27 teaches that following Jesus may require tough choices, putting Him above family, comfort, and self. Carrying your cross means fully committing to Christ’s path.</p>
+</div>
+
+</article>
+
+
+<aside>
+<p>Tip: Memorize one verse per week and meditate on it daily.</p>
+</aside>
+
+<figure>
+<img src="https://images.unsplash.com/photo-1529676468690-2f72f1d7a118" alt="Open Bible">
+<figcaption>God’s word is a fountain of guidance and wisdom.</figcaption>
+</figure>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2026 Fountain of Grace. All Rights Reserved.</p>
+</footer>
+<script>
+const buttons = document.querySelectorAll('.expand-btn');
+buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+</script>
+
+</body>
+</html>

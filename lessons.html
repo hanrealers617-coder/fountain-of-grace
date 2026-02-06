@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fountain of Grace - Lessons</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Roboto',sans-serif;}
+body{background:#f0fdf4;color:#333;line-height:1.6;}
+header{background:#2e7d32;color:white;padding:25px 0;text-align:center;}
+header h1{font-size:3rem;}
+header p{font-size:1.2rem;margin-top:5px;}
+nav{background:#1b5e20;}
+nav ul{display:flex;justify-content:center;list-style:none;flex-wrap:wrap;}
+nav ul li{margin:0 15px;}
+nav ul li a{color:white;text-decoration:none;padding:15px 0;display:block;transition:0.3s;}
+nav ul li a:hover{color:#a5d6a7;}
+main{max-width:1100px;margin:40px auto;padding:0 20px;}
+section{margin-bottom:60px;}
+section h2{color:#2e7d32;margin-bottom:20px;font-size:2.5rem;}
+article{background:white;padding:20px;margin-bottom:30px;border-radius:10px;box-shadow:0 4px 6px rgba(0,0,0,0.1);}
+aside{background:#e8f5e9;padding:15px;border-left:5px solid #2e7d32;margin-bottom:30px;}
+footer{background:#1b5e20;color:white;text-align:center;padding:20px 0;margin-top:40px;}
+
+.expand-btn{
+    background:#4CAF50;
+    color:white;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    margin-top:15px;
+    width:100%;
+    text-align:left;
+    font-size:1.1rem;
+}
+.expand-btn:hover{background:#2e7d32;}
+
+.expand-content{
+    display:none;
+    background:#e8f5e9;
+    padding:15px;
+    margin-top:8px;
+    border-left:5px solid #2e7d32;
+    border-radius:5px;
+}
+
+@media(max-width:768px){
+nav ul{flex-direction:column;}
+nav ul li{margin:10px 0;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Fountain of Grace</h1>
+<p>Lessons for Living Faithfully</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="lessons.html">Lessons</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="guide.html">Guide</a></li>
+  </ul>
+</nav>
+
+
+<main>
+<section id="lessons">
+
+<article>
+<h2>Lessons</h2>
+<p>Learn practical ways to follow Jesus in daily life. Each lesson is designed to help you apply faith, love, and obedience in real situations.</p>
+
+<ul>
+<li>Be a Fountain, Not a Train</li>
+<li>Carrying Your Cross</li>
+<li>True Discipleship</li>
+<li>Serving Others</li>
+</ul>
+</article>
+
+<!-- LESSON 1 -->
+<article>
+<h2>Lesson 1: Be a Fountain, Not a Train</h2>
+<p><strong>Key Idea:</strong> Followers of Jesus are called to give continuously, not take and move on.</p>
+
+<button class="expand-btn">Lesson Overview</button>
+<div class="expand-content">
+<p>
+A train stops briefly, takes people, and leaves.  
+A fountain keeps flowing, giving life without running dry.  
+God calls us to live like fountains — pouring out love, faith, and service wherever we go.
+</p>
+<p><strong>Jesus gave everything for us, and we are called to follow His example.</strong></p>
+</div>
+
+<button class="expand-btn">Biblical Foundation</button>
+<div class="expand-content">
+<p><strong>John 15:13</strong> – “Greater love has no one than this: to lay down one’s life for one’s friends.”</p>
+<p><strong>Matthew 10:8</strong> – “Freely you have received; freely give.”</p>
+</div>
+
+<button class="expand-btn">The Cost of Following Jesus</button>
+<div class="expand-content">
+<p><strong>Luke 14:26–27 (NIV)</strong></p>
+<p>
+Loving Jesus must come above everything else — even family, comfort, and self.
+</p>
+<ul>
+<li>Dying to self</li>
+<li>Living fully for Christ</li>
+</ul>
+<p>Discipleship is not easy, but it is worth everything.</p>
+</div>
+
+<button class="expand-btn">Deny Yourself – True Discipleship</button>
+<div class="expand-content">
+<ul>
+<li>Let go of earthly attachments</li>
+<li>Remove what has taken God’s place in your heart</li>
+<li>Release the world to see the true value of Jesus</li>
+<li>Experience real freedom and love</li>
+</ul>
+<p><strong>Luke 9:23</strong> – “Whoever wants to be My disciple must deny themselves and take up their cross daily and follow Me.”</p>
+<p><strong>Jesus is enough.</strong></p>
+</div>
+
+<button class="expand-btn">Heart Check & Application</button>
+<div class="expand-content">
+<ul>
+<li>Examine your heart honestly</li>
+<li>Identify anything that has replaced God</li>
+<li>Remove it and place God first again</li>
+<li>Remember: God loves you deeply</li>
+</ul>
+<p><strong>Proverbs 4:23</strong> – “Above all else, guard your heart, for everything you do flows from it.”</p>
+<p><strong>Amen.</strong></p>
+</div>
+
+</article>
+
+<aside>
+<p>
+Practice this lesson this week:  
+Choose one way each day to give without expecting anything in return.
+</p>
+</aside>
+
+</section>
+</main>
+
+<footer>
+<p>&copy; 2026 Fountain of Grace. All Rights Reserved.</p>
+</footer>
+
+<script>
+const buttons = document.querySelectorAll('.expand-btn');
+buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+</script>
+
+</body>
+</html>
